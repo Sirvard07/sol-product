@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .report-section {
+        min-height: 100vh;
+        background-color: rgb(255 255 255);
+      }
+
+      .report-container {
+        margin: 0px auto;
+      }
+
+      .header-section {
+        margin: 54px 95px;
+      }
+
+      .header-text {
+        font-family: "Corbel";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        text-align: center;
+      }
+
+      .header-border {
+        height: 1px;
+        background-color: black;
+      }
+
+      .logo-section {
+        height: 100px;
+        top: 131px;
+        left: 1px;
+        background-color: rgba(51, 51, 51, 1);
+        margin: 8px 0px;
+        text-align: center;
+      }
+
+      .logo-image {
+        margin: 10px;
+      }
+
+      .message {
+        width: 740px;
+        border-radius: 15px;
+        background-color: rgba(242, 242, 242, 1);
+        padding: 43px 43px 56px 43px;
+        margin: 60px auto;
+      }
+
+      .message-header {
+        font-family: "Inter";
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .message-text {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+
+      .dashed-border {
+        border: 0.5px dashed black;
+        width: 1065px;
+        margin: auto;
+      }
+
+      .about-offer-section {
+        margin-top: 55px;
+      }
+
+      .about-offer-header {
+        font-family: "Inter";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .about-offer-text {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .grey-border {
+        width: 830px;
+        height: 6px;
+        background: rgba(196, 196, 196, 0.41);
+        margin: auto;
+      }
+
+      .about-offer-table {
+        width: 830px;
+        margin: auto;
+        margin-bottom: 115px;
+      }
+
+      .about-offer-tbody {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: black;
+      }
+
+      .about-offer-tr {
+        border-bottom: 1px solid rgba(234, 234, 234, 1);
+        padding: 0px 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-offer-td1 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: black;
+      }
+
+      .about-offer-td2 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: black;
+      }
+
+      .page-bottom {
+        border: 1px solid rgba(51, 51, 51, 1);
+      }
+
+      .page-bottom-rectangle {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid rgba(217, 217, 217, 1);
+        margin: auto;
+      }
+
+      .customer-info-header {
+        font-family: "Inter";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .customer-info-section {
+        padding: 33px 33px 33px 42px;
+        width: 740px;
+        border-radius: 15px;
+        background: rgba(242, 242, 242, 1);
+        margin: auto;
+        margin-bottom: 54px;
+      }
+
+      .customer-info-section-span1 {
+        display: inline-block;
+        width: 120px;
+        height: 30px;
+        font-family: "Lato";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      .customer-info-section-span3 {
+        padding: 0px 20px;
+        font-family: "Lato";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      .customer-info-section-span4 {
+        border-right: 1px solid rgba(51, 51, 51, 1);
+        border-left: 1px solid rgba(51, 51, 51, 1);
+        padding: 0px 15px;
+        font-family: "Lato";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      .customer-info-section-span5 {
+        padding: 0px 20px;
+        font-family: "Lato";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      .why-choose-us {
+        margin-top: 60px;
+      }
+
+      .why-choose-us-title {
+        font-family: "Inter";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .why-choose-us-subtitle {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+        width: 929px;
+        margin: auto;
+      }
+
+      .why-choose-us-steps {
+        display: flex;
+        justify-content: center;
+        width: 950px;
+        margin: 55px auto;
+      }
+
+      .why-choose-us-images > div:first-of-type {
+        margin-bottom: 24px;
+      }
+
+      .events li {
+        display: flex;
+        color: black;
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .events .first {
+        position: relative;
+      }
+
+      .events .first::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 0;
+        transform: translateX(50%);
+        border-radius: 50%;
+        background: white;
+        border: 1px black solid;
+        width: 7px;
+        height: 7px;
+      }
+
+      .events .second {
+        padding: 0 1.5em 1.5em 1.5em;
+        position: relative;
+      }
+
+      .events .second::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        height: 100%;
+        border-left: 1px rgba(51, 51, 51, 1) solid;
+      }
+
+      .events {
+        margin: 1em;
+      }
+
+      .events .last {
+        padding: 0 1.5em 1.5em 1.5em;
+        position: relative;
+      }
+      .events,
+      .events *::before,
+      .events *::after {
+        box-sizing: border-box;
+      }
+
+      .guarantees-section {
+        text-align: center;
+      }
+
+      .guarantees-header {
+        font-family: "Inter";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        color: black;
+        margin-bottom: 50px;
+      }
+
+      .guarantees-table {
+        width: 830px;
+        margin: auto;
+        margin-bottom: 115px;
+      }
+
+      .guarantees-tbody {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: black;
+      }
+
+      .guarantees-tr {
+        border-bottom: 1px solid rgba(234, 234, 234, 1);
+        padding: 0px 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .guarantees-td1 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: black;
+      }
+
+      .guarantees-td2 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: black;
+      }
+
+      .price-section {
+        margin-top: 80px;
+        margin-bottom: 100px;
+      }
+
+      .price-title {
+        font-family: "Inter";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+        margin-bottom: 45px;
+      }
+
+      .price-subtitle {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .price-table {
+        width: 830px;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        border: 1px solid rgba(217, 217, 217, 1);
+      }
+
+      .price-tbody {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: black;
+      }
+
+      .price-tr {
+        border-bottom: 1px solid rgba(217, 217, 217, 1);
+        padding: 0px 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .price-td1 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: black;
+        border-right: 1px solid rgba(217, 217, 217, 1);
+      }
+
+      .price-td2 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .price-tbody .last {
+        border-bottom: unset;
+      }
+
+      .price-info {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .short-line {
+        border: 0.5px solid black;
+        width: 437px;
+        margin: auto;
+      }
+
+      .price-message {
+        width: 871px;
+        margin: auto;
+      }
+
+      blockquote {
+        border: none;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-bottom: -30px;
+        quotes: "\201C""\201D""\2018""\2019";
+      }
+
+      blockquote h3 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      blockquote h3:before {
+        content: open-quote;
+        font-weight: bold;
+        font-size: 100px;
+        color: rgba(166, 166, 166, 1);
+        margin-left: -80px;
+        margin-right: 80px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      blockquote h3:after {
+        content: close-quote;
+        font-weight: bold;
+        font-size: 100px;
+        color: rgba(166, 166, 166, 1);
+        margin-left: 800px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .comment-section {
+        margin-top: 90px;
+      }
+
+      .comment-header {
+        font-family: "Inter";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .comment-info {
+        margin: 70px auto;
+        width: 795px;
+      }
+
+      .comment-info-span1 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+        display: inline-block;
+        width: 110px;
+      }
+
+      .comment-info-span3 {
+        font-family: "Lato";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+        margin-left: 20px;
+      }
+
+      .comment-info-span4 {
+        font-family: "Lato";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+        display: inline-block;
+        border-right: 1px solid rgba(51, 51, 51, 1);
+        border-left: 1px solid rgba(51, 51, 51, 1);
+        padding: 0px 20px;
+        margin: 0 20px;
+      }
+
+      .comment-info-span5 {
+        font-family: "Lato";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      .comment-info-span6 {
+        display: inline-grid;
+        background-color: rgba(248, 248, 248, 1);
+        border: 1px solid rgba(234, 234, 234, 1);
+        width: 576px;
+        font-family: "Lato";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(51, 51, 51, 1);
+        padding: 25px 25px 55px 25px;
+        margin: 0 15px;
+        border-radius: 12px;
+        margin-top: 30px;
+      }
+
+      .confirmation-info {
+        width: 740px;
+        background: rgba(90, 95, 101, 1);
+        padding: 25px 40px;
+        border-radius: 37px;
+        margin: auto;
+      }
+
+      .confirmation-info-pic {
+        text-align: center;
+      }
+
+      .confirmation-info-text {
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: white;
+      }
+
+      .confirmation-info-link {
+        text-align: center;
+      }
+
+      .confirmation-info-link a {
+        font-family: "SansSerif";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: white;
+        margin-left: 4px;
+      }
+
+      .feedback-section {
+        width: 752px;
+        margin: 55px auto;
+      }
+
+      .feedback-section h2 {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: black;
+      }
+
+      .feedback-section div {
+        border: 2px solid rgba(217, 217, 217, 1);
+        width: 256px;
+        margin: 60px auto;
+      }
+
+      .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 965px;
+        margin: auto;
+      }
+
+      .contact-info div p:first-of-type {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: black;
+      }
+
+      .contact-info div p {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: black;
+      }
+
+      .contact-info-last {
+        padding-left: 260px;
+      }
+
+      .partners-info {
+        background: rgb(247 247 247);
+        border-top: 1px solid rgb(220 220 220);
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px;
+        margin-top: 50px;
+      }
+
+      .partners-info-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .partners-info-left img {
+        height: 47px;
+      }
+
+      .partners-info-left div p {
+        font-family: "Roboto Flex";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: black;
+      }
+
+      .partners-info-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 340px;
+      }
+
+      .partners-info-right div {
+        display: flex;
+        align-items: center;
+      }
+
+      .partners-info-right div div {
+        border-right: 2px solid rgba(220, 220, 220, 1);
+        width: 8px;
+        height: 45px;
+      }
+
+      .partners-info-span {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: black;
+      }
+
+      .partners-img1 {
+        height: 30px;
+        width: 40px;
+      }
+
+      .partners-img2 {
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="report-section">
+      <div class="report-container">
+        <div class="header-section">
+          <p class="header-text">
+            Her kommer ditt tilbud på solcelleanlegg fra:
+          </p>
+        </div>
+        <div class="header-border"></div>
+        <div class="logo-section">
+          <img src="http://localhost:5000/images/LOGO.png" class="logo-image" />
+        </div>
+        <div class="header-border"></div>
+        <div class="message">
+          <h1 class="message-header">
+            Hei {{customerInfo.name}} {{customerInfo.surname}}!
+          </h1>
+          <p class="message-text">
+            Takk for at du forspurte et tilbud fra oss i Solcellespesialisten
+            AS, Norges største solcelleleverandør.
+          </p>
+          <p class="message-text">
+            Under finner du all informasjonen om solcelleanlegget. Vil du vite
+            mer, så er det bare å spørre, så vil en av våre spesialister hjelpe
+            deg.
+          </p>
+        </div>
+        <div class="dashed-border"></div>
+        <div class="about-offer-section">
+          <h2 class="about-offer-header">Kort om tilbudt anlegg:</h2>
+          <p class="about-offer-text">
+            Pris etter ENOVA støtte : {{netPrice}},-
+          </p>
+          <div class="grey-border"></div>
+          <table class="about-offer-table">
+            <tbody class="about-offer-tbody">
+              <tr class="about-offer-tr">
+                <td class="about-offer-td1">Antall paneler</td>
+                <td class="about-offer-td2">{{panelCount}}</td>
+              </tr>
+              <tr class="about-offer-tr">
+                <td class="about-offer-td1">Estimert Årlig produksjon</td>
+                <td class="about-offer-td2">{{roofOrderInfo.anProd}} kWh</td>
+              </tr>
+              <tr class="about-offer-tr">
+                <td class="about-offer-td1">Panel effekt</td>
+                <td class="about-offer-td2">{{panelType}} kW</td>
+              </tr>
+              <tr class="about-offer-tr">
+                <td class="about-offer-td1">Installert effekt</td>
+                <td class="about-offer-td2">{{totalKwp}} kWp</td>
+              </tr>
+              <tr class="about-offer-tr">
+                <td class="about-offer-td1">Taktype</td>
+                <td class="about-offer-td2">{{orderRoofType}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-bottom"></div>
+        <div class="page-bottom-rectangle"></div>
+        <div class="customer-info">
+          <h1 class="customer-info-header">Kunde informasjon</h1>
+          <div class="customer-info-section">
+            <div class="customer-info-section-row1">
+              <span class="customer-info-section-span1">Kundedetaljer</span>
+              <span>:</span>
+              <span class="customer-info-section-span3"
+                >{{customerInfo.name}} {{customerInfo.surname}}</span
+              >
+              <span class="customer-info-section-span4"
+                >{{customerInfo.phone}}</span
+              >
+              <span class="customer-info-section-span5"
+                >{{customerInfo.email}}</span
+              >
+            </div>
+            <div class="customer-info-section-row2">
+              <span class="customer-info-section-span1">Lokasjon</span>
+              <span>:</span>
+              <span class="customer-info-section-span3"
+                >{{customerInfo.address}},&nbsp;&nbsp;{{customerInfo.postalCode}}
+                {{customerInfo.by}}</span
+              >
+            </div>
+            <div class="customer-info-section-row3">
+              <span class="customer-info-section-span1">Referanse</span>
+              <span>:</span>
+              <span class="customer-info-section-span3">{{SFNumber}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="dashed-border"></div>
+        <div class="why-choose-us">
+          <h1 class="why-choose-us-title">Hvorfor skal du velge oss?</h1>
+          <h4 class="why-choose-us-subtitle">
+            Solcellespesialisten er Norges største solcelle entreprenør med over
+            270 ansatte og har lokasjoner over store deler av landet.
+          </h4>
+          <div class="why-choose-us-steps">
+            <div class="why-choose-us-images">
+              <div>
+                <img
+                  src="http://localhost:5000/images/customer-retention 1.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="http://localhost:5000/images/solar-energy 1.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="http://localhost:5000/images/clean-energy-sustainability 1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <ul class="events">
+                <li>
+                  <span class="first"></span>
+                  <span class="second">Vi er godkjent installatørbedrift.</span>
+                </li>
+                <li>
+                  <span class="first"></span>
+                  <span class="second"
+                    >Vi er godjkent miljøfyrtårn sertifisert.</span
+                  >
+                </li>
+                <li>
+                  <span class="first"></span>
+                  <span class="second"
+                    >Vi har egen reklamasjonsavdeling som sørger for at du blir
+                    ivaretatt gjennom hele anleggets levetid.</span
+                  >
+                </li>
+                <li>
+                  <span class="first"></span>
+                  <span class="second"
+                    >Vi gir deg fjernavlesning inkludert i prisen*.</span
+                  >
+                </li>
+                <li>
+                  <span class="first"></span>
+                  <span class="second"
+                    >Vi bruker kun interne montører og elektrikere.</span
+                  >
+                </li>
+                <li>
+                  <span class="first"></span>
+                  <span class="last"
+                    >Vi har over 18 års erfaring i bransjen og har ferdigstilt
+                    over 3500 anlegg.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="guarantees-section">
+          <h1 class="guarantees-header">Garantier</h1>
+          <div class="grey-border"></div>
+          <table class="guarantees-table">
+            <tbody class="guarantees-tbody">
+              <tr class="guarantees-tr">
+                <td class="guarantees-td1">Produktgaranti:</td>
+                <td class="guarantees-td2">{{yearString}} ({{panelType}}W)</td>
+              </tr>
+              <tr class="guarantees-tr">
+                <td class="guarantees-td1">Effektgaranti:</td>
+                <td class="guarantees-td2">25 år</td>
+              </tr>
+              <tr class="guarantees-tr">
+                <td class="guarantees-td1">Garanti inverter:</td>
+                <td class="guarantees-td2">5 år</td>
+              </tr>
+              <tr class="guarantees-tr">
+                <td class="guarantees-td1">
+                  Garanti byggeteknisk og elektrisk:
+                </td>
+                <td class="guarantees-td2">5 år (bransjestandard)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-bottom"></div>
+        <div class="page-bottom-rectangle"></div>
+        <div class="price-section">
+          <div class="price-title">Pris</div>
+          <div class="price-subtitle">
+            Du får et nøkkelferdig anlegg så du kan begynne å produsere din egen
+            strøm fra første stund.
+          </div>
+          <table class="price-table">
+            <tbody class="price-tbody">
+              <tr class="price-tr">
+                <td class="price-td1">Totalpris inkl. MVA.</td>
+                <td class="price-td2">{{prisSecond}} kr</td>
+              </tr>
+              <tr class="price-tr">
+                <td class="price-td1">ENOVA støtte</td>
+                <td class="price-td2">-{{enovaSupport}} kr</td>
+              </tr>
+              {{#if showDiscountField }}
+              <tr class="price-tr">
+                <td class="price-td1">Rabatt</td>
+                <td class="price-td2">-{{discount}} kr</td>
+              </tr>
+              {{/if}}
+              <tr class="price-tr last">
+                {{#if showDiscountField}}
+                <td class="price-td1">Pris etter ENOVA støtte og rabatter</td>
+                {{else}}
+                <td class="price-td1">Pris etter ENOVA støtte</td>
+                {{/if}}
+                <td class="price-td2">{{netPrice}} kr</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="short-line"></div>
+        <div class="price-message">
+          <blockquote>
+            <h3>
+              Viste du at mengden solenergi som treffer jorden i løpet av ett år
+              er omkring 15 000 ganger større enn hele verdens årlige
+              energiforbruk?
+              <br />
+              <br />
+              Solenergi har et enormt potensial og vil være en viktig brikke for
+              å oppfylle fremtidens energibehov.
+            </h3>
+          </blockquote>
+        </div>
+        <div class="short-line"></div>
+        <div class="comment-section">
+          <h1 class="comment-header">Kommentar fra rådgiver</h1>
+          <div class="comment-info">
+            <div class="comment-info-row1">
+              <span class="comment-info-span1">Rådgiver</span>
+              <span>:</span>
+              <span class="comment-info-span3">{{customerInfo.name}}</span>
+              <span class="comment-info-span4">{{customerInfo.phone}}</span>
+              <span class="comment-info-span5">{{customerInfo.email}}</span>
+            </div>
+            <div class="comment-info-row2">
+              <span class="comment-info-span1">Kommentar</span>
+              <span>:</span>
+              <span class="comment-info-span6"> {{comment}} </span>
+            </div>
+          </div>
+        </div>
+        <div class="confirmation-info">
+          <div class="confirmation-info-pic">
+            <img src="http://localhost:5000/images/confirm.png" alt="" />
+          </div>
+          <h2 class="confirmation-info-text">
+            Ønsker du å akseptere tilbudet kan du svare på denne e-posten med en
+            bekreftelse. Vi vil da legge inn en bestilling. Ved aksept bekrefter
+            du at du har lest og godtar vilkårene.<br /><br />
+            Tilbudet er gyldig i 14 dager.
+          </h2>
+          <div class="confirmation-info-link">
+            <img src="http://localhost:5000/images/document.png" alt="" />
+            <a href="https://www.solcellespesialisten.no/kjopsbetingelser"
+              >Vilkår: lenke til vilkår</a
+            >
+          </div>
+        </div>
+        <div class="feedback-section">
+          <h2>
+            Hvis du har noen spørsmål eller ønsker mer informasjon kan du svare
+            på e-posten eller kontakte din rådgiver.
+          </h2>
+          <div></div>
+        </div>
+        <div class="contact-info">
+          <div>
+            <p>Solcellespesialisten AS</p>
+            <p>+47 691 09 065</p>
+            <p>salg.enebolig@solcellespesialisten.no</p>
+          </div>
+          <div class="contact-info-last">
+            <p>Kontakt person</p>
+            <p>+47{{customerInfo.phone}}</p>
+            <p>{{customerInfo.email}}</p>
+          </div>
+        </div>
+        <div class="partners-info">
+          <div class="partners-info-left">
+            <img src="http://localhost:5000/images/footer-logo.png" alt="" />
+            <div>
+              <p>
+                Dikeveien 52, 1661 Rolvsøy, Norge<br />
+                Foretaksregisteret: NO 988 985 481 MVA<br />
+                Nettside: http://www.solcellespesialisten.no
+              </p>
+            </div>
+          </div>
+          <div class="partners-info-right">
+            <span class="partners-info-span">Premium Partner of</span>
+            <div>
+              <img
+                src="http://localhost:5000/images/partner2.png"
+                alt=""
+                class="partners-img1"
+              />
+              <div></div>
+            </div>
+            <img
+              src="http://localhost:5000/images/partner1.png"
+              alt=""
+              class="partners-img2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

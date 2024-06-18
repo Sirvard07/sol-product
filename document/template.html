@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap"
+    rel="stylesheet"
+  	/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+	body {
+		box-sizing: border-box;
+    	margin: 0;
+    	padding: 0;
+	}
+
+      .report-section {
+        min-height: 100vh;
+        background-color: rgb(255 255 255);
+      }
+
+      .report-container {
+        margin: 0px auto;
+      }
+
+      .company-info {
+        background: url("http://localhost:5000/images/SverreLang.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+      }
+
+      .company-info-header {
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        padding: 6px 20px;
+        color: white;
+        border-radius: 0px 16px;
+        font-style: normal;
+        background: black;
+      }
+
+      .company-info-content {
+        padding: 20px 30px;
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: white;
+        border-radius: 0px 16px;
+        font-style: normal;
+        background: black;
+      }
+
+	  .company-info-content-p {
+		margin: 2px 0px;
+	  }
+
+      .logo {
+        width: 260px;
+		height: 35px;
+      }
+
+      .border {
+        background: rgba(246, 119, 54, 0.08);
+        border-width: 1px 0px;
+        border-style: solid;
+        border-color: rgba(253, 100, 22, 0.1);
+      }
+
+      .order-information {
+        background: white;
+        padding: 6px 45px 13px 45px;
+      }
+
+      .customer-info {
+        background: radial-gradient(
+          84.88% 84.88% at 50% 15.12%,
+          rgba(231, 70, 63, 0.2) 0%,
+          rgba(239, 132, 57, 0.2) 100%
+        );
+        border-radius: 0px 16px;
+        margin-bottom: 10px;
+      }
+
+      .customer-info-table {
+        width: 100%;
+      }
+
+      .customer-info-tbody {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: black;
+      }
+
+      .customer-info-tr {
+        border-bottom: 1px solid rgb(221 202 187);
+        padding: 0px 20px;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+
+      .last-tr {
+        border-bottom: unset;
+      }
+
+      .roof-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+
+      .roof-each-info {
+        background: radial-gradient(
+          84.88% 84.88% at 50% 15.12%,
+          rgba(231, 70, 63, 0.2) 0%,
+          rgba(239, 132, 57, 0.2) 100%
+        );
+        border-radius: 0px 16px;
+        padding: 0px 12px;
+        display: grid;
+        grid-template-columns: 1fr 45px;
+        align-items: center;
+      }
+
+      .other-roof {
+        grid-column: 1 / 4;
+      }
+
+      .roof-each-info-div1 {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+      }
+
+      .roof-each-info-div2>img {
+        width: 100%;
+      }
+
+
+      .roof-each-info-p1 {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+        color: black;
+        white-space: nowrap;
+      }
+
+      .roof-each-info-p2 {
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: unset;
+        color: black;
+        margin-bottom: 0px;
+      }
+
+      .roof-each-info-p3 {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: unset;
+        color: black;
+      }
+
+      /* .last {
+        padding: 0px 12px;
+      } */
+
+      .energy-bill-title {
+        font-family:  'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+		    font-size: 15px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: rgb(59 180 132);
+        padding: 0 20px;
+      }
+
+      .utility-info {
+        background: rgb(245 245 245);
+        border-radius: 0px 16px;
+      }
+
+      .utility-info-table {
+        width: 100%;
+      }
+
+      .utility-info-tbody {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: black;
+      }
+
+      .utility-info-tr {
+        padding: 3px 20px;
+        border-bottom: 1px solid rgb(221 202 187);
+        display: grid;
+        grid-template-columns: 280px 1fr 1fr;
+        gap: 30px;
+      }
+
+      .utility-info-td1 {
+		font-size: 15px;
+        line-height: 24px;
+      }
+
+      .utility-info-td2 {
+		font-size: 15px;
+        line-height: 24px;
+      }
+
+      .utility-info-td3 {
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      .red-info {
+        color: rgb(239 51 65);
+      }
+
+      .last-tr {
+        border-bottom: unset;
+      }
+
+      .calculation {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: rgb(239 51 65);
+        padding: 0 20px;
+      }
+
+      .calculation-p1 {
+        margin: 17px 0;
+      }
+
+      /* .calculation-p2 {
+        font-size: 18px;
+        margin: 17px 0;
+      } */
+
+      .enova-info {
+        padding: 0 20px;
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+      }
+
+      .enova-details {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+      }
+
+      .enova-details-div {
+        color: black;
+        font-size: 15px;
+      }
+
+      .enova-details-img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .accept-offer {
+        background: rgb(245 245 245);
+        border-radius: 0px 16px;
+        padding: 0px 20px;
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        color: black;
+        align-items: center;
+      }
+
+      .accept-offer-div {
+        display: grid;
+      }
+
+      .accept-offer-p1 {
+        font-size: 20px;
+        margin-bottom: 0px;
+      }
+
+      .accept-offer-p2 {
+        font-size: 15px;
+      }
+
+      .accept-offer-span {
+        color: rgb(239 51 65);
+      }
+
+      .electricity-market {
+        padding: 0px 20px;
+        display: grid;
+      }
+
+      .electricity-market-p {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: black;
+        margin-bottom: 0px;
+      }
+
+      .electricity-calculation {
+        display: flex;
+        gap: 65px;
+        font-family: 'Rubik', sans-serif;
+        line-height: 10px;
+        font-weight: 600;
+        color: rgb(59 180 132);
+      }
+
+      .electricity-calculation-p1 {
+        font-size: 28px;
+        text-transform: lowercase;
+      }
+
+      .electricity-calculation-p2 {
+        font-size: 16px;
+      }
+
+      
+      .partners-info {
+        background: rgb(247 247 247);
+        border-top: 1px solid rgb(220 220 220);
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 5px 70px 5px 0;
+        gap: 20px;
+      }
+      .partners-info-span {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: black;
+      }
+
+      .partners-img1 {
+        height: 30px;
+        width: 40px;
+      }
+
+      .partners-img2 {
+        height: 40px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="report-section">
+      <div class="report-container">
+        <div class="company-info">
+      <div class="company-info-header">ET SAMMENDRAG AV SOLSYSTEMET DITT</div>
+      <div class="company-info-content">
+        <img class="logo" src='http://localhost:5000/images/logo-2.png' alt="Sollcellespesialisten"></img>
+        <p class="company-info-content-p">Stabburveien 1A, 2etg, 1617 Fredrikstad, Norge</p>
+        <p class="company-info-content-p">Telefon: 69109065</p>
+        <p class="company-info-content-p">E-postadresse: enebolig@solcellespesialisten.no</p>
+        <p class="company-info-content-p">Foretaksregisteret: NO 988 985 481 MVA</p>
+		<p class="company-info-content-p">http: //www.solcellespesialisten.no</p>
+      </div>
+    </div>
+    <div class="border"></div>
+    <div class="order-information">
+      <div class="customer-info">
+        <table class="customer-info-table ">
+          <tbody class="customer-info-tbody">
+            <tr class="customer-info-tr">
+              <td>Navn</td>
+              <td>{{customerInfo.name}} {{customerInfo.surname}}</td>
+            </tr>
+            <tr class="customer-info-tr">
+              <td>Adresse</td>
+              <td>
+                {{customerInfo.address}}
+                {{customerInfo.postalCode}}
+                {{customerInfo.by}}
+              </td>
+            </tr>
+            <tr class="customer-info-tr">
+              <td>Tlf nr</td>
+              <td>{{customerInfo.phone}}</td>
+            </tr>
+            <tr class="customer-info-tr">
+              <td>Epost</td>
+              <td>{{customerInfo.email}}</td>
+            </tr>
+            <tr class="customer-info-tr last-tr">
+              <td>SF nr</td>
+              <td>{{SFNumber}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="roof-info">
+        <div class="roof-each-info" >
+          <div class="roof-each-info-div1">
+            <p class="roof-each-info-p1">Antall paneler</p>
+            <p class="roof-each-info-p2">{{panelCount}}</p>
+            <p class="roof-each-info-p3"></p>
+          </div>
+          <div class="roof-each-info-div2">
+            <img src='http://localhost:5000/images/solar-panel2.png' alt="Solar Panel" />
+          </div>
+        </div>
+        <div class="roof-each-info" >
+          <div class="roof-each-info-div1">
+            <p class="roof-each-info-p1">Type panel</p>
+            <p class="roof-each-info-p2">{{panelType}}</p>
+            <p class="roof-each-info-p3">Solid Black</p>
+          </div>
+          <div class="roof-each-info-div2">
+            <img src='http://localhost:5000/images/solar-cell2.png' alt="Solar Cell" />
+          </div>
+        </div>
+        <div class="roof-each-info" >
+          <div class="roof-each-info-div1">
+            <p class="roof-each-info-p1">Taktype</p>
+            <p class="roof-each-info-p2">{{orderRoofType}}</p>
+            <p class="roof-each-info-p3"></p>
+          </div>
+          <div class="roof-each-info-div2">
+            <img src='http://localhost:5000/images/roof2.png' alt="Roof" />
+          </div>
+        </div>
+        <div class="roof-each-info" >
+          <div class="roof-each-info-div1">
+            <p class="roof-each-info-p1">Materiell</p>
+            <p class="roof-each-info-p2">ECO m</p>
+            <p class="roof-each-info-p3">popnagler</p>
+          </div>
+          <div class="roof-each-info-div2">
+            <img src='http://localhost:5000/images/capacitor1.png' alt="Capacitor" />
+          </div>
+        </div>
+        <div class="roof-each-info other-roof">
+          <div class="roof-each-info-div1 last">
+            <p class="roof-each-info-p1">Estimert kWh</p>
+            <p class="roof-each-info-p2">{{roofOrderInfo.anProd}}</p>
+			<p class="roof-each-info-p3"></p>
+          </div>
+          <div class="roof-each-info-div2">
+            <img src='http://localhost:5000/images/gauge1.png' alt="Gauge" />
+          </div>
+        </div>
+        <div class="roof-each-info" >
+          <div class="roof-each-info-div1 last">
+            <p class="roof-each-info-p1">Total kWp</p>
+            <p class="roof-each-info-p2">{{totalKwp}}</p>
+			<p class="roof-each-info-p3"></p>
+          </div>
+          <div class="roof-each-info-div2">
+            <img src='http://localhost:5000/images/thunderbolt1.png' alt="Thunderbolt" />
+          </div>
+        </div>
+      </div>
+      <h1 class="energy-bill-title">
+        Senk energiregning og bidra med fornybar energi
+      </h1>
+      <div class="utility-info">
+        <table class="utility-info-table">
+          <tbody class="utility-info-tbody">
+            <tr class="utility-info-tr">
+              <td class="utility-info-td1">Pris</td>
+              <td class="utility-info-td2">{{prisFirst}},- kr eks MVA</td>
+              <td class="utility-info-td3">{{prisSecond}},- kr inkl MVA</td>
+            </tr>
+            <tr class="utility-info-tr">
+              <td class="utility-info-td1">ENOVA støtte</td>
+              <td class="utility-info-td2 red-info"></td>
+              <td class="utility-info-td3 red-info">{{enovaSupport}},- kr inkl MVA*</td>
+            </tr>
+            <tr class="utility-info-tr last-tr">
+              <td class="utility-info-td1">Totalpris kunde etter ENOVA støtte</td>
+              <td class="utility-info-td2"></td>
+              <td class="utility-info-td3 ">{{netPrice}},- kr</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="calculation">
+        <p class="calculation-p1">Tilbud er gyldig til {{currentTime}}</p>
+        <p class="calculation-p2">* Gitt at du tilfredstiller ENOVAs krav, se www.enova.no</p>
+      </div>
+      <div class="enova-info">
+        <div class="enova-details">
+          <div class="enova-details-div">
+            Solcellespesialisten er en markedsledende installatør av
+            solcelleanlegg til næringsbygg, landbruk, enebolig og
+            hytter. Siden 2015 har selskapet installert tusenvis av
+            eneboliger i Norge og vet akkurat hvordan tilpasse anlegget
+            til din bolig. For å kunne tilby solcelleanlegg til alle
+            norske husstander som er egnet har vi laget enkle og
+            forutsigbare betingelser som du som kunde kan stole på.
+          </div>
+          <img class="enova-details-img" src='http://localhost:5000/images/leaf.png' alt="Leaf" />
+        </div>
+      </div>
+      <div class="accept-offer">
+        <img src='http://localhost:5000/images/tilbud_3.jpg' alt="Offer" />
+        <div class="accept-offer-div">
+          <p class="accept-offer-p1">Hvordan godta tilbudet</p>
+          <p class="accept-offer-p2">
+            Du godtar dette tilbudet ved å svare på mail til selger med en aksept. Du vil så motta en link hvor du skal laste opp bilder.
+          </p>
+        </div>
+      </div>
+      <div class="electricity-market">
+        <p class="electricity-market-p">
+          Så mye CO2 tilsvarerer denne besparelsen på det Europeiske
+          strømmarkedet
+        </p>
+        <div class="electricity-calculation">
+          <div>
+            <p class="electricity-calculation-p1">
+              {{solarPanelSavings}}
+               kg CO2 eq
+            </p>
+            <p class="electricity-calculation-p2">Dine besparelser med solcellepaneler</p>
+          </div>
+          <div >
+            <p class="electricity-calculation-p1">0,6 kr</p>
+            <p class="electricity-calculation-p2">pris per Kwh over 30 år</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="partners-info">
+      <span class="partners-info-span">Premium Partner av</span>
+      <img src='http://localhost:5000/images/partner2.png' alt="" class="partners-img1" />
+      <img src='http://localhost:5000/images/partner1.png' alt="" class="partners-img2" />
+    </div>
+    </div>
+  </body>
+</html>
